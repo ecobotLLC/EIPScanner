@@ -21,6 +21,8 @@ target_link_libraries(discovery_example EIPScanner)
 add_executable(yaskawa_assembly_object_example vendors/yaskawa/mp3300iec/Yaskawa_AssemblyObjectExample.cpp)
 target_link_libraries(yaskawa_assembly_object_example EIPScanner)
 
+add_subdirectory(vendors/ecobot/ADZ-KEP)
+
 if(WIN32)
   target_link_libraries(explicit_messaging ws2_32)
   target_link_libraries(file_object_example ws2_32)
